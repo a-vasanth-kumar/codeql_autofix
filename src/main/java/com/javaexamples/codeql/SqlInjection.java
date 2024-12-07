@@ -9,6 +9,8 @@ public class SqlInjection {
 
     public void getUserData(String username, String password) {
         try {
+            // BAD: SQL query constructed using string concatenation
+            // This should trigger a SQL injection alert.
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydatabase", "root", "password");
             Statement stmt = connection.createStatement();
             String query = "SELECT * FROM users WHERE username = '" + username + "' AND password = '" + password + "'";
