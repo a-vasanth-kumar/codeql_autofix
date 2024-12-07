@@ -1,1 +1,3 @@
+com/javaexamples/codeql/SqlInjection.class
+com/javaexamples/codeql/HomeController.class
 com/javaexamples/codeql/CodeqlAutofixExampleApplication.class
