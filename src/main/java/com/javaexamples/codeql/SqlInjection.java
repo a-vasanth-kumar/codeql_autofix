@@ -13,7 +13,7 @@ public class SqlInjection {
             // This should trigger a SQL injection alert.
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydatabase", "root", "password");
             Statement stmt = connection.createStatement();
-            String query = "SELECT * FROM users WHERE username = '" + username + "' AND password = '" + password + "'";
+            String query = "select * from users where username = '" + username + "' AND password = '" + password + "'";
             ResultSet rs = stmt.executeQuery(query);
 
             while (rs.next()) {
