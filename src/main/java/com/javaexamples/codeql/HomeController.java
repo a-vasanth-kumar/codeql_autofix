@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomeController {
 
+    private final Logger log = LoggerFactory.getLogger(LogInjection.class);
     @GetMapping("/home")
     public String home(@RequestParam(value = "username", defaultValue = "name") String username) {
         log.warn("User:'{}'", username);
