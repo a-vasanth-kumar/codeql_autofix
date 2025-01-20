@@ -16,7 +16,6 @@ public class CookieExample {
         
         String cookieValue = encode(bytes);
         
-        Cookie cookie = new Cookie("name", cookieValue);
         response.addCookie(cookie);
     }
 }
