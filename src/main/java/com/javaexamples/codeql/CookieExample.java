@@ -18,6 +18,5 @@ public class CookieExample {
         
         Cookie cookie = new Cookie("name", cookieValue);
         response.addCookie(cookie);
-        response.addCookie(cookie);
     }
 }
