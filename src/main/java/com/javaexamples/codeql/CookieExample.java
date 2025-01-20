@@ -1,5 +1,6 @@
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Random;
 
 public class CookieExample {
 
